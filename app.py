@@ -30,12 +30,12 @@ def search():
 
         response=client.chat.completions.create(
 
-            model="llama-3.3-70b-versalite",
+            model="llama-3.3-70b-versatile",
             messages=[
                 {"role":"user",
                  "content": input_ia}
             ],
-            tempearture=0.7,
+            temperature=0.7,
             max_tokens=1024
         )
         return {
